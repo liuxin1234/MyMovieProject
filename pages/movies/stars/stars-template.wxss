@@ -1,0 +1,23 @@
+.stars-container{
+      display: flex;
+      flex-direction: row;
+}
+
+.stars{
+      display: flex;
+      flex-direction: row;
+      height: 17rpx;
+      margin-right: 24rpx;
+      margin-top: 6rpx;
+}
+
+/**这里有个空格是表示stas 下面的所有image图片的样式*/
+.stars image{
+      padding-left: 3rpx;
+      height: 17rpx;
+      width: 17rpx;
+}
+
+.star-score{
+      color: #1f3463;
+}

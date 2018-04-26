@@ -1,0 +1,261 @@
+/* pages/home/home.wxss */
+@import 'application-grid/application-grid-template.wxss';
+
+/*-----------------顶部合同数的布局----------------------*/
+
+.topContractView {
+      background-color: #dee7ec;
+      display: flex;
+      flex-direction: row;
+      padding: 20rpx;
+}
+
+.topTextSize {
+      font-size: 15px;
+}
+
+.imgContract {
+      width: 80rpx;
+      height: 80rpx;
+}
+
+.oneContractView {
+      display: flex;
+      flex-direction: column;
+      margin-left: 15rpx;
+      flex: 1;
+}
+
+.oneContractText {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+}
+
+.oneContractText text {
+      color: #3e8e85;
+}
+
+.twoContractView {
+      display: flex;
+      flex-direction: column;
+      margin-left: 15rpx;
+      flex: 1;
+}
+
+.twoContractText {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+}
+
+.twoContractText  text {
+      color: #4074ac;
+}
+
+.threeContractView {
+      display: flex;
+      flex-direction: column;
+      margin-left: 15rpx;
+      flex: 1;
+}
+
+.threeContractText {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+}
+
+.threeContractText text {
+      color: #d56562;
+}
+
+/*-------------第二行布局----------------*/
+
+.topMattersView {
+      display: flex;
+      flex-direction: row;
+      padding: 20rpx;
+}
+
+/*-------------待办事宜布局----------------*/
+
+.oneMattersView {
+      background-color: #a9d1e9;
+      display: flex;
+      flex-direction: row;
+      flex: 1.2;
+      align-items: flex-end;
+      border-radius: 6px;
+}
+
+.oneMattersText {
+      font-size: 18px;
+      padding-left: 30rpx;
+      padding-top: 10rpx;
+      padding-bottom: 10rpx;
+      color: #1b496e;
+}
+
+.imgMatters {
+      width: 60rpx;
+      height: 100rpx;
+      margin-left: 15rpx;
+      margin-bottom: -5rpx;
+}
+
+.oneMattersNumText {
+      position: absolute;
+      margin-top: -40rpx;
+      margin-left: 20rpx;
+}
+
+/*-------------我的流程布局----------------*/
+
+.twoProcessView {
+      background-color: #a4e3f0;
+      display: flex;
+      flex-direction: row;
+      flex: 1.2;
+      margin-left: 10rpx;
+      align-items: flex-end;
+      border-radius: 6px;
+}
+
+.twoProcessText {
+      font-size: 18px;
+      padding-left: 30rpx;
+      padding-top: 10rpx;
+      padding-bottom: 10rpx;
+      color: #2d6b7c;
+}
+
+.imgProcess {
+      width: 60rpx;
+      height: 100rpx;
+      margin-left: 15rpx;
+      margin-bottom: -5rpx;
+}
+
+.twoProcessNumText {
+      position: absolute;
+      margin-top: -40rpx;
+      margin-left: 20rpx;
+}
+
+/*-------------项目预警布局----------------*/
+
+.threeWarningView {
+      background-color: #f2e5c2;
+      display: flex;
+      flex-direction: row;
+      flex: 2;
+      margin-left: 10rpx;
+      align-items: flex-end;
+      border-radius: 6px;
+}
+
+.threeWarningText {
+      font-size: 18px;
+      padding-left: 30rpx;
+      padding-top: 10rpx;
+      padding-bottom: 10rpx;
+      color: #93471d;
+}
+
+.imgWarning {
+      width: 60rpx;
+      height: 100rpx;
+      margin-left: 40rpx;
+      margin-bottom: -5rpx;
+}
+
+.threeWarningNumText {
+      position: absolute;
+      margin-top: -40rpx;
+      margin-left: 20rpx;
+}
+
+/*--------------------通用的标题样式------------------------------------*/
+
+.commonView {
+      display: flex;
+      flex-direction: row;
+      padding: 10rpx;
+      justify-content: space-between;
+}
+
+.commonTitleView {
+      display: flex;
+      flex-direction: row;
+}
+
+.commonImgView {
+      width: 5rpx;
+      height: 35rpx;
+      background-color: #fe4f56;
+      margin-top: 8rpx
+}
+
+
+
+.commonTransverseLine{
+      width: 100%;
+      height: 1rpx;
+      background-color: #cccccc
+}
+
+.commonText {
+      margin-left: 14rpx;
+      font-size: 16px;
+      color: black
+}
+
+.commonImg {
+      width: 50rpx;
+      height: 50rpx;
+      justify-content: flex-end;
+}
+
+/*-------------通知公告布局-------------*/
+
+.listItem {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 10rpx;
+}
+
+.listItem text{
+      font-size: 13px;
+}
+
+/*-------------常用应用布局-------------*/
+
+.gridView {
+      display: flex;
+      flex-direction: column;
+}
+
+/*-------------本月寿星布局-------------*/
+
+.birthDayView {
+      display: flex;
+      flex-direction: row;
+}
+
+.birthDayItem {
+      border-radius: 15px;
+      margin: 10rpx;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20rpx;
+}
+
+.birthDayImg {
+      width: 100rpx;
+      height: 100rpx;
+      border-radius: 5px;
+
+}

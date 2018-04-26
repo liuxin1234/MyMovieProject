@@ -1,0 +1,110 @@
+<!--pages/home/home.wxml-->
+<import src='application-grid/application-grid-template.wxml' />
+<view>
+      <view class='topContractView'>
+            <image class='imgContract' src='/images/home/contract.jpg'></image>
+            <view class='oneContractView'>
+                  <text>已签订合同个数</text>
+                  <view class='oneContractText'>
+                        <text class='topTextSize'>{{ContractData.ContractCount}}</text>
+                        <text>个</text>
+                  </view>
+            </view>
+            <view class='twoContractView'>
+                  <text>已签订合同个数</text>
+                  <view class='twoContractText'>
+                        <text class='topTextSize'>{{ContractData.ContractMoneys}}</text>
+                        <text>万元</text>
+                  </view>
+
+            </view>
+            <view class='threeContractView'>
+                  <text>已签订合同个数</text>
+                  <view class='threeContractText'>
+                        <text class='topTextSize'>{{ContractData.InvoicedMoneys}}</text>
+                        <text>个</text>
+                  </view>
+            </view>
+      </view>
+
+      <view class='topMattersView'>
+            <view class='oneMattersView'>
+                  <text class='oneMattersText'>待办\n事宜</text>
+                  <image class='imgMatters' src='/images/home/f02.png'>
+                        <text class='oneMattersNumText'>0</text>
+                  </image>
+
+            </view>
+
+            <view class='twoProcessView'>
+                  <text class='twoProcessText'>我的\n流程</text>
+                  <image class='imgProcess' src='/images/home/f03.png'>
+                        <text class='twoProcessNumText'>0</text>
+                  </image>
+            </view>
+
+            <view class='threeWarningView'>
+                  <text class='threeWarningText'>项目\n预警</text>
+                  <image class='imgWarning' src='/images/home/f04.png'>
+                        <text class='threeWarningNumText'>0</text>
+                  </image>
+                  <image class='imgWarning' src='/images/home/f05.png'>
+                        <text class='threeWarningNumText'>0</text>
+                  </image>
+            </view>
+      </view>
+
+      <view class='commonView'>
+            <view class='commonTitleView'>
+                  <view class='commonImgView'></view>
+                  <text class='commonText'>通知公告</text>
+            </view>
+            <image class='commonImg' src='/images/home/guide.png'></image>
+      </view>
+      
+      <view class='commonTransverseLine'></view>
+
+      <view class='listView'>
+            <block wx:key='contentListKey' wx:for='{{ContentArrayData}}' wx:for-item='itemData'>
+                  <view class='listItem'>
+                        <text>{{itemData.contentName}}</text>
+                        <text>{{itemData.pubDateTime}}</text>
+                  </view>
+            </block>
+      </view>
+
+      <view class='commonView'>
+            <view class='commonTitleView'>
+                  <view class='commonImgView'></view>
+                  <text class='commonText'>常见应用</text>
+            </view>
+            <image class='commonImg' src='/images/home/guide.png'></image>
+      </view>
+
+      <view class='commonTransverseLine'></view>
+
+      <template is="applicationGridTemplate" data='{{CommonApplicationData}}' />
+
+      <!-- 这里clear是将float浮动清除掉 -->
+      <view style="clear:both;"></view>
+
+      <view class='commonView'>
+            <view class='commonTitleView'>
+                  <view class='commonImgView'></view>
+                  <text class='commonText'>本月寿星</text>
+            </view>
+            <image class='commonImg' src='/images/home/guide.png'></image>
+      </view>
+
+      <view class='commonTransverseLine'></view>
+
+      <view class='birthDayView'>
+            <block wx:key="birthDayDataKey" wx:for='{{UserHolidayData}}' wx:for-item='itemData'>
+                  <view class='birthDayItem'>
+                        <image class='birthDayImg' src='{{HeadImgUrl+itemData.Id+"/300/300"}}'></image>
+                  </view>
+            </block>
+      </view>
+
+
+</view>

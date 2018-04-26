@@ -1,0 +1,8 @@
+<import src='../application/application-template.wxml' />
+<template name='applicationGridTemplate'>
+      <block wx:key='applicationKey' wx:for='{{CommonApplicationData}}' wx:for-item='itemData'>
+            <view class='single-view-container'>
+                  <template is='applicationTemplate' data='{{...itemData}}'/>
+            </view>
+      </block>
+</template>

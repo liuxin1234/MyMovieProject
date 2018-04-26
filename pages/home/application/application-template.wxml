@@ -1,0 +1,7 @@
+<template name='applicationTemplate'>
+            <view class='gridItem'>
+                  <image class='gridItemImgBtm' style="background-color: {{IcoBgColor}};border-radius: 50px;}"></image>
+                  <image class='gridItemImgTop' src='{{"/images/home/"+IcoName+".png"}}'></image>
+                  <text class='gridItemText'>{{ActivityTitle}}</text>
+            </view>
+</template>

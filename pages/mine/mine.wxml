@@ -1,0 +1,48 @@
+<view class="container">
+      <image class='mineTopImgBg' src='/images/mine/mine_head_bg.png'></image>
+
+      <view class='topView'>
+            <text class='topTvNameType'>{{UserInfoData.RealName}}</text>
+            <text class='topTvType'>中经科技</text>
+            <text class='topTvType'>{{UserInfoData.OrganizationName}}</text>
+      </view>
+
+
+      <view class="userinfo">
+            <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+            <block wx:else>
+                  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+                  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+            </block>
+      </view>
+
+      <view class='commonViewCenter' style='margin-top: 100rpx'>
+            <text class=''>电话</text>
+            <text class=''>{{UserInfoData.Mobile}}</text>
+            <view class='viewHorizon'></view>
+      </view>
+      <view class='commonViewCenter'>
+            <text class=''>邮箱</text>
+            <text class=''>{{UserInfoData.Email}}</text>
+            <view class='viewHorizon'></view>
+      </view>
+
+      <view class='viewHorizonMatch' style='margin-top: 50rpx'></view>
+
+      <view class='commonPadding' catchtap='onFeedBackClick'>
+            <text class='commonTvType'>意见反馈</text>
+            <image class='editorMoreBtnIcon' src='/images/mine/editor_more_normal.png'></image>
+      </view>
+
+      <view class='viewHorizonMatch'></view>
+
+      <view class='commonPadding'  catchtap='onAboutWeClick'>
+            <text class='commonTvType'>关于我们</text>
+            <image class='editorMoreBtnIcon' src='/images/mine/editor_more_normal.png'></image>
+      </view>
+
+      <view class='viewHorizonMatch'></view>
+
+      <button class='btnSignOut' bindtap='onSignOutClick'>退 出</button>
+
+</view>

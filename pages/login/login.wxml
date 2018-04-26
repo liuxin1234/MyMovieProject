@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+      <image class='loginBgImg' src='/images/login_bg.jpg' mode='widthFix'></image>
+
+      <view class='commonNameView'>
+            <view class='inputView'></view>
+            <view class='commonInput'>
+                  <image class='iconImgName' src='/images/icon_user_name_white.png'></image>
+                  <input class='inputText' type='text' placeholder='请输入用户名' placeholder-class='input-placeholder' bindinput='onBindInputUserName' ></input>
+            </view>
+      </view>
+
+      <view class='commonPassWordView'>
+            <view class='inputView'></view>
+            <view class='commonInput'>
+                  <image class='iconImgPassWord' src='/images/icon_pass_word_white.png'></image>
+                  <input class='inputText' type='text' placeholder='请输入密码' password='true' placeholder-class='input-placeholder' bindinput='onBindInputPassWord'></input>
+            </view>
+      </view>
+
+      <button class='btnLogin' catchtap='onLoginClick'>登 录</button>
+</view>

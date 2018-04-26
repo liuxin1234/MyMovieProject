@@ -1,0 +1,5 @@
+@import '../application/application-template.wxss';
+.single-view-container{
+      float: left;  
+}
+
